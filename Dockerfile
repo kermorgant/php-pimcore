@@ -18,6 +18,7 @@ RUN echo "@php https://php.codecasts.rocks/v3.7/php-7.1" >> /etc/apk/repositorie
 RUN apk add --update php@php \
 &&  apk add --update php-bcmath@php \
 &&  apk add --update php-bz2@php \
+&&  apk add --update php-ctype@php \
 &&  apk add --update php-curl@php \
 &&  apk add --update php-dom@php \
 &&  apk add --update php-exif@php \
