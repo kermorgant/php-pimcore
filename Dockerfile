@@ -11,7 +11,7 @@ ADD https://php.codecasts.rocks/php-alpine.rsa.pub /etc/apk/keys/php-alpine.rsa.
 RUN apk --update add ca-certificates
 
 # add the repository, make sure you replace the correct versions if you want.
-RUN echo "@php https://php.codecasts.rocks/v3.7/php-7.2" >> /etc/apk/repositories
+RUN echo "@php https://php.codecasts.rocks/v3.7/php-7.1" >> /etc/apk/repositories
 
 # install php and some extensions
 # notice the @php is required to avoid getting default php packages from alpine instead.
