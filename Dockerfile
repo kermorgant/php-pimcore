@@ -34,6 +34,12 @@ RUN apk add --update php@php \
 &&  apk add --update php-zip@php \
 &&  apk add --update php-zlib@php
 
+ENV COMPOSER_ALLOW_SUPERUSER 1
+COPY --from=composer:1.6 /usr/bin/composer /usr/bin/composer
+
+COPY ["entrypoint.sh", "/"]
+ENTRYPOINT ["/entrypoint.sh"]
+
 
 # FROM kgtech/php-sf
 
