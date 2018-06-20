@@ -16,6 +16,7 @@ RUN echo "@php https://php.codecasts.rocks/v3.7/php-7.1" >> /etc/apk/repositorie
 # install php and some extensions
 # notice the @php is required to avoid getting default php packages from alpine instead.
 RUN apk add --update php@php \
+&&  apk add --update php-bcmath@php \
 &&  apk add --update php-bz2@php \
 &&  apk add --update php-curl@php \
 &&  apk add --update php-dom@php \
@@ -23,6 +24,8 @@ RUN apk add --update php@php \
 &&  apk add --update php-gd@php \
 &&  apk add --update php-iconv@php \
 &&  apk add --update php-intl@php \
+&&  apk add --update php-json@php \
+&&  apk add --update php-mcrypt@php \
 &&  apk add --update php-mbstring@php \
 &&  apk add --update php-mysqli@php \
 &&  apk add --update php-opcache@php \
@@ -34,6 +37,7 @@ RUN apk add --update php@php \
 &&  apk add --update php-pgsql@php \
 &&  apk add --update php-xdebug@php \
 &&  apk add --update php-xml@php \
+&&  apk add --update php-xsl@php \
 &&  apk add --update php-zip@php \
 &&  apk add --update php-zlib@php \
 && ln -s /usr/bin/php7 /usr/bin/php
