@@ -3,7 +3,8 @@ FROM kgtech/php-sf
 ENV BUILD_DEPS zlib-dev libmemcached-dev cyrus-sasl-dev bzip2-dev
 
 RUN apk add --no-cache --update libmemcached-libs zlib libbz2 \
-&& docker-php-ext-install bz2
+&& docker-php-ext-install bz2 \
+&& docker-php-ext-install opcache
 
 RUN set -xe \
 && apk add --no-cache --update --virtual .phpize-deps $PHPIZE_DEPS \
