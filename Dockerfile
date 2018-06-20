@@ -38,6 +38,7 @@ RUN apk add --update php@php \
 &&  apk add --update php-pgsql@php \
 &&  apk add --update php-xdebug@php \
 &&  apk add --update php-xml@php \
+&&  apk add --update php-xmlreader@php \
 &&  apk add --update php-xsl@php \
 &&  apk add --update php-zip@php \
 &&  apk add --update php-zlib@php \
