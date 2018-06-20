@@ -32,7 +32,8 @@ RUN apk add --update php@php \
 &&  apk add --update php-xdebug@php \
 &&  apk add --update php-xml@php \
 &&  apk add --update php-zip@php \
-&&  apk add --update php-zlib@php
+&&  apk add --update php-zlib@php \
+&& ln -s /usr/bin/php7 /usr/bin/php
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
 COPY --from=composer:1.6 /usr/bin/composer /usr/bin/composer
