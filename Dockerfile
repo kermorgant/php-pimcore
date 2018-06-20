@@ -15,24 +15,24 @@ RUN echo "@php https://php.codecasts.rocks/v3.7/php-7.2" >> /etc/apk/repositorie
 
 # install php and some extensions
 # notice the @php is required to avoid getting default php packages from alpine instead.
-RUN apk add --update php@php \
-&&  apk add --update php-bz2s@php \
-&&  apk add --update php-curl@php \
-&&  apk add --update php-dom@php \
-&&  apk add --update php-exif@php \
-&&  apk add --update php-gd@php \
-&&  apk add --update php-iconv@php \
-&&  apk add --update php-intl@php \
-&&  apk add --update php-mbstring@php \
-&&  apk add --update php-mysqli@php \
-&&  apk add --update php-opcache@php \
-&&  apk add --update php-openssl@php \
-&&  apk add --update php-pdo@php \
-&&  apk add --update php-pdo_mysql@php \
-&&  apk add --update php-xdebug@php \
-&&  apk add --update php-xml@php \
-&&  apk add --update php-zip@php \
-&&  apk add --update php-zlib@php
+RUN apk add --update php@php
+RUN  apk add --update php-bz2s@php
+RUN  apk add --update php-curl@php
+RUN  apk add --update php-dom@php
+RUN  apk add --update php-exif@php
+RUN  apk add --update php-gd@php
+RUN  apk add --update php-iconv@php
+RUN  apk add --update php-intl@php
+RUN  apk add --update php-mbstring@php
+RUN  apk add --update php-mysqli@php
+RUN  apk add --update php-opcache@php
+RUN  apk add --update php-openssl@php
+RUN  apk add --update php-pdo@php
+RUN  apk add --update php-pdo_mysql@php
+RUN  apk add --update php-xdebug@php
+RUN  apk add --update php-xml@php
+RUN  apk add --update php-zip@php
+RUN  apk add --update php-zlib@php
 
 
 # FROM kgtech/php-sf
