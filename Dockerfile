@@ -16,23 +16,23 @@ RUN echo "@php https://php.codecasts.rocks/v3.7/php-7.2" >> /etc/apk/repositorie
 # install php and some extensions
 # notice the @php is required to avoid getting default php packages from alpine instead.
 RUN apk add --update php@php \
-php-bz2s@php \
-php-curl@php \
-php-dom@php \
-php-exif@php \
-php-gd@php \
-php-iconv@php \
-php-intl@php \
-php-mbstring@php \
-php-mysqli@php \
-php-opcache@php \
-php-openssl@php \
-php-pdo@php \
-php-pdo_mysql@php \
-php-xdebug@php \
-php-xml@php \
-php-zip@php \
-php-zlib@php
+&&  apk add --update php-bz2s@php \
+&&  apk add --update php-curl@php \
+&&  apk add --update php-dom@php \
+&&  apk add --update php-exif@php \
+&&  apk add --update php-gd@php \
+&&  apk add --update php-iconv@php \
+&&  apk add --update php-intl@php \
+&&  apk add --update php-mbstring@php \
+&&  apk add --update php-mysqli@php \
+&&  apk add --update php-opcache@php \
+&&  apk add --update php-openssl@php \
+&&  apk add --update php-pdo@php \
+&&  apk add --update php-pdo_mysql@php \
+&&  apk add --update php-xdebug@php \
+&&  apk add --update php-xml@php \
+&&  apk add --update php-zip@php \
+&&  apk add --update php-zlib@php
 
 
 # FROM kgtech/php-sf
