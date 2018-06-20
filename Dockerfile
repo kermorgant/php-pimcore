@@ -36,6 +36,7 @@ RUN apk add --update php@php \
 &&  apk add --update php-pdo_pgsql@php \
 &&  apk add --update php-phar@php \
 &&  apk add --update php-pgsql@php \
+&&  apk add --update php-session@php \
 &&  apk add --update php-xdebug@php \
 &&  apk add --update php-xml@php \
 &&  apk add --update php-xmlreader@php \
